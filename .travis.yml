@@ -1,0 +1,15 @@
+language: generic
+
+sudo: required
+
+services:
+    - docker
+
+before_script:
+    - docker pull alpine:3.4
+
+script:
+    - make
+
+after_success:
+    - docker images

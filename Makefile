@@ -2,7 +2,7 @@ VERSION=7.6.0-alpha1
 REPO=menski
 IMAGE=i-woke-up-like-this
 
-SERVER=tomcat
+SERVER=tomcat wildfly jboss
 RUN=$(SERVER:=-run)
 RUN_EE=$(SERVER:=-run-ee)
 DAEMON=$(SERVER:=-daemon)
